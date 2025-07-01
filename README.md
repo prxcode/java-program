@@ -66,9 +66,21 @@ This repository includes topic-wise Java code and mini projects I built while le
 - Simple Compiler in Java
 
   
-## How to Run
-Use any Java IDE (e.g., IntelliJ, Eclipse) or run from terminal:
+## Installation & Basic Setup
+Simple Breakdown to compare Java and C working.
 
+
+C file is directly compiled to machine code by any compiler like gcc, and this machine code runs on that specific OS where it got compiled 
 ```bash
-javac FileName.java
-java FileName
+.c file ──► [Compiler] ──► .exe (native code) ──► Runs directly on OS
+```
+
+Java file is compiled as bytecode by Java Compiler, this bytecode can run on any platform but once it gets converted to machine code its no more platform independent
+
+```
+.java file ──► [javac] ──► .class (bytecode)
+```
+and this bytecode is converted to machine code by JVM which runs on platform 
+```
+.class ──► [JVM] ──► interpreted or JIT compiled ──► runs on platform
+```
