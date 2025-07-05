@@ -1,28 +1,21 @@
-Here’s a clean and well-formatted `.md` (Markdown) file for your notes on **Variables & Data Types in Java**. You can copy this into a file named `Variables-and-Data-Types.md` and use it in your Java course repo.
-
----
-
-````markdown
 # Variables & Data Types in Java
 
----
-
-## 📦 Variables
+## Variables
 
 A **variable** is a container (storage area) used to hold data.  
 Each variable should be given a unique name (identifier).
 
 ```java
-package com.apnacollege;
+package com.company;
 
 public class Main {
 
     public static void main(String[] args) {
         // Variables
-        String name = "Aman";
+        String name = "Shubh";
         int age = 30;
 
-        String neighbour = "Akku";
+        String neighbour = "MrBeast";
         String friend = neighbour;
     }
 }
@@ -30,7 +23,7 @@ public class Main {
 
 ---
 
-## 🧮 Data Types
+## Data Types
 
 **Data types** are declarations for variables.
 This determines the type and size of data associated with variables, which is essential because different data types occupy different sizes of memory.
@@ -42,7 +35,7 @@ There are 2 main types of Data Types:
 
 ---
 
-### ✅ Primitive Data Types
+### Primitive Data Types
 
 These are the data types of **fixed size**.
 
@@ -59,14 +52,14 @@ These are the data types of **fixed size**.
 
 ---
 
-### 📦 Non-Primitive Data Types
+### Non-Primitive Data Types
 
 These are of **variable size** and are usually declared using the `new` keyword.
 
 Examples:
 
 ```java
-String name = new String("Aman");
+String name = new String("Shubh");
 
 int[] marks = new int[3];
 marks[0] = 97;
@@ -76,7 +69,7 @@ marks[2] = 95;
 
 ---
 
-## 🔒 Constants
+## Constants
 
 A **constant** is a variable in Java that has a **fixed value** – it cannot be reassigned once initialized.
 
