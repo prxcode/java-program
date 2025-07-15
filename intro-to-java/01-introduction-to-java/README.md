@@ -29,26 +29,35 @@ class Main{
 ### **Note**:  File Name Must Match Class Name
 
 
+### Hello World program in Java, C, Python
 
-Hello World in Java, C, Python
-Java
-`
+#### Java
+```java
 // In JAVA
-public class Main{
-    public static void main(String[] args){
+public class Main {
+    public static void main(String[] args) {
         System.out.println("Hello World!");
     }
 }
-`
-C Programming
-`
+````
+
+#### C Programming
+
+```c
+// In C
 #include <stdio.h>
-int main(){
+
+int main() {
     printf("Hello World!");
     return 0;
 }
-`
-Python
-`
-print("Hello World!)
-`
+```
+
+#### Python
+
+```python
+# In Python
+print("Hello World!")
+```
+
+
