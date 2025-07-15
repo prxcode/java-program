@@ -1,43 +1,29 @@
 # Variables & Data Types in Java
+Just like we have some rules that we follow to speak english(grammar), we have some rules to follow while writing a Java Program. The set of these rules is called **Syntax**.
 
-## Variables
+### Variables
+A Variable is a container that stores a value. This value can be changed during the execution of the program.
+Ex: `int number = 8`
+> here `int` = data type, `number` = variable, `8` = value it stores.
 
-A **variable** is a container (storage area) used to hold data.  
-Each variable should be given a unique name (identifier).
-
-```java
-package com.company;
-
-public class Main {
-
-    public static void main(String[] args) {
-        // Variables
-        String name = "Shubh";
-        int age = 30;
-
-        String neighbour = "MrBeast";
-        String friend = neighbour;
-    }
-}
-````
-
+### Rules for declaring a variable name
+We can choose a name while declaring variable if the following rules are followed.
+- **Must NOT begin with a digit** [int 1prxcode; is invalid]
+- **Name is case sensitive** [prx and Prx are different]
+- **Should not be a keyword** [like void]
+- **White Space not allowed** [int prx code; is invalid]
+- **Can contain alphabets, $character, _character and digits if the other conditions are met** [int p1rx_code]
 ---
 
-## Data Types
-
-**Data types** are declarations for variables.
-This determines the type and size of data associated with variables, which is essential because different data types occupy different sizes of memory.
-
+### Data Types
 There are 2 main types of Data Types:
-
 * **Primitive Data Types** – to store simple values
 * **Non-Primitive Data Types** – to store complex values
 
 ---
 
 ### Primitive Data Types
-
-These are the data types of **fixed size**.
+These are variables which must be declared before use.
 
 | Data Type | Meaning                | Size (Bytes) | Range                                                   |
 | --------- | ---------------------- | ------------ | ------------------------------------------------------- |
@@ -50,6 +36,32 @@ These are the data types of **fixed size**.
 | `char`    | Character              | 2            | `a, b, c, A, B, C, @, #, $` etc.                        |
 | `boolean` | Boolean                | 1            | `true`, `false`                                         |
 
+
+To choose data type for our multiple variables in our program. In order to choose the data type we first need to find the type of data we want to store. After that we need to analyze the min and max value we might use
+
+### Literals
+A constant value which can be assigned to the variable is called as a literal.
+
+- 101 = Integer Literal
+- 10.1f = Float Literal
+- 10.1 = Double Literal
+- 'A' = Character Literal
+- true = Boolean Literal
+- "prxcode" = String Literal
+
+### Keywords 
+Words which are reserved and used by the Java compiler. They cannot be used as an identifier.
+
+
+### Reading data from the keyboard
+In order to read data from the keyboard, Java has a scanner class. Scanner class has a lot of methods to read the data from the keyboard
+
+Read from the keyboard ->
+`Scanner S = new Scanner(System.in);`
+
+Method to read from the keyboard ->
+`int a = S.nextInt();`
+
 ---
 
 ### Non-Primitive Data Types
@@ -59,7 +71,7 @@ These are of **variable size** and are usually declared using the `new` keyword.
 Examples:
 
 ```java
-String name = new String("Shubh");
+String name = new String("Aman");
 
 int[] marks = new int[3];
 marks[0] = 97;
@@ -68,19 +80,3 @@ marks[2] = 95;
 ```
 
 ---
-
-## Constants
-
-A **constant** is a variable in Java that has a **fixed value** – it cannot be reassigned once initialized.
-
-```java
-package com.apnacollege;
-
-public class Main {
-
-    public static void main(String[] args) {
-        // Constants
-        final float PI = 3.14F;
-    }
-}
-```
