@@ -85,4 +85,3 @@ and this bytecode is converted to machine code by JVM which runs on platform
 .class ──► [JVM] ──► interpreted or JIT compiled ──► runs on platform
 ```
 
----
