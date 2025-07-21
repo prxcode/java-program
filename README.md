@@ -6,7 +6,7 @@ This repository includes topic-wise Java code and mini projects I built while le
 ### 1. Basic Intro topic in Java Programming 
 - Print Hello world in Java
 - Input/Output, Variables & Data types
-- Operators 
+- Operators
 - Conditional Statements
 - Loops
 - All about Patterns
@@ -85,4 +85,3 @@ and this bytecode is converted to machine code by JVM which runs on platform
 ```
 .class ──► [JVM] ──► interpreted or JIT compiled ──► runs on platform
 ```
----
