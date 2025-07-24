@@ -1,6 +1,7 @@
 # Basic Intro topic in Java Programming
 - Print Hello world in Java
 - Input/Output, Variables & Data types
+- Operators
 - Conditional Statements
 - Loops
 - All about Patterns
