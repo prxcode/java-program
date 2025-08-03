@@ -1,5 +1,5 @@
 # Java Programming Practice
-This repository includes topic-wise Java code and mini projects I built while learning Java. However, *it's still in progress so it gets updated daily*!
+This repository includes topic-wise Java code and mini projects like [Juno-IDE: Code editor for running java code](https://github.com/prxcode/juno-ide/) I built while learning Java. However, *it's still in progress so it gets updated daily*!
 
 ## Structure
 ### 1. Basic Intro topic in Java Programming 
