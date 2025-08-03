@@ -5,24 +5,25 @@ Sometime our program grows in size and we want to seprate the logic of main meth
 A method is a function written inside a class, Since java is an object oriented language, we need to write the method inside some class
 
 ```java
-dataType name(){
-//Method body
+dataType methodName(parameters) {
+    // code
+    return value;
 }
 ```
 
 Following method returns sum of two numbers:
 ```java
-int mySum(int a, int b){
-  int c = a+b;
-  return c;
+int mySum(int a, int b) {
+    int c = a + b;
+    return c;
 }
 ```
 
 ### Calling a Method 
 A method can be called by creating an object of the class in which the method exists followed by the method call:
 ```java
-calc obj = new calc() -> Object creating 
-  obj.mySum(a,b) -> method call upon an object
+Calc obj = new Calc();      // Create an object of class Calc
+int result = obj.mySum(2, 3); // Call the method with values
 ```
 
 The values from the method call (a and b) are copied to the a and b of the function mySum. Thus even if we modify the values a and b inside the method, the values in the main method will not change
@@ -30,10 +31,26 @@ The values from the method call (a and b) are copied to the a and b of the funct
 
 ### Void return type
 When we dont want our method to return anything, we use void as the return type
+```java
+void sayHello() {
+    System.out.println("Hello!");
+}
+```
 
 ### Static keyword
 Static keyword is used to associate a method of a given class with the class rather than the object. Static method in a class is shared by all the objects
+```java
+public static int add(int a, int b) {
+    return a + b;
+}
+```
+- Normally, you need to create an object to use a method.
+- But if a method is marked static, you can call it without creating an object.
 
+```java
+int result = MyClass.add(2, 3);
+
+```
 
 ### Process of method invocation in java
 Consider the method sum:
@@ -58,19 +75,21 @@ The values 2 and 3 are copied to a and b and then a+b=2+3=5 is returned in c whi
 Two or more methods can have same name but different parameters such methods are called overloaded methods.
 
 ```java
-void foo()
-void foo(int a)
-void foo(int a, int b)
+void print() {}
+void print(int a) {}
+void print(int a, int b) {}
 ```
 Method overlaoding cannot be performed by changing the return type of methods.
 
 ### Variable Arguments (varargs) 
 A function with vararg can be created in java using the following syntax:
 ```java
-public static void foo(int... arr)
-  {
-  // arr is available here as int[] arr
-  }
+public static void foo(int... arr) {
+    // arr is an int[] array now
+    for (int a : arr) {
+        System.out.println(a);
+    }
+}
 ```
 
 > foo can be called with zero or more arguments like this:
@@ -89,6 +108,12 @@ public static void bar(int a, int b)
 ### Recursion
 A function in java can call itself such calling a function by itself is called recursion.
 - Example: Factorial of a number
+```java
+int factorial(int n) {
+    if (n == 1) return 1;
+    return n * factorial(n - 1);
+}
+```
 
 
 
