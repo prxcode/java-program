@@ -11,3 +11,12 @@ public class Main{
         System.out.println("Sum is: "+(num1+num2));
     }
 }
+
+/*
+In python
+
+num1 = int(input("Enter num1: "))
+num2 = int(input("Enter num2: "))
+print("Sum is: ",num1+num2)
+
+*/
