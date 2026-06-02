@@ -14,5 +14,7 @@ public class VariableDataType{
 
   System.out.println("1st student name is "+ s1.name);
   System.out.println("1st student roll number is "+ s1.rollNumber);
+  System.out.println("2nd student name is "+ s2.name);
+  System.out.println("2nd student roll number is "+ s2.rollNumber);
   }
 }
